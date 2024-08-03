@@ -3,12 +3,25 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-kardapoltsev documentation
-==========================
+Документация как код (Docs as Code)
+===================================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+===================================
+
+Документация как код (Docs as Code) — это подход, при котором
+документация создаётся, управляется и хранится так же,
+как и программный код.
+
+В этом проекте я описал мой опыт применения практики Docs as Code
+для создания документации и её публикации на сайте.
+
+В проекте я использовал следующий инструментарий:
+
+- язык разметки ReStructuredText (ReST);
+- генератор документации Python Sphinx;
+- систему контроля версий Git;
+- сервис GitHub;
+- сервис Read the Docs.
 
 
 .. toctree::
