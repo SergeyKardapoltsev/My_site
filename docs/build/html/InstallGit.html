@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Установка Git &#8212; документация kardapoltsev </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=372fde1a"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=9bfe3ffa"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Установка Sphinx" href="InstallSphinx.html" />
+    <link rel="prev" title="Синтаксис разметки reStructuredText" href="ReST.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="git">
+<h1>Установка Git<a class="headerlink" href="#git" title="Ссылка на этот заголовок">¶</a></h1>
+<hr class="docutils" />
+<p>С помощью Git я обеспечил контроль над версиями своего проекта и
+загружал файлы на GitHub.</p>
+<p>В этом разделе указана инструкция по установке Git на разные
+операционные системы.</p>
+<section id="git-macos">
+<h2>Установка Git на macOS<a class="headerlink" href="#git-macos" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для установки Git на macOS существует два способа.</p>
+<p><strong>Первый способ.</strong> Откройте консоль и выполните команду <code class="docutils literal notranslate"><span class="pre">/usr/bin/git</span></code>.
+Она запустит установщик. Нажмите <strong>Install</strong> и дождитесь окончания
+установки.</p>
+<p>Когда установка завершится, для проверки выполните эту команду:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span>
+</pre></div>
+</div>
+<p>Если на экран выводится текущая версия Git, значит, установка прошла
+успешно.</p>
+<p><strong>Второй способ.</strong> Используйте <strong>Homebrew</strong>.</p>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Установите менеджер пакетов Homebrew:</dt><dd><ul class="simple">
+<li><p>Перейдите на <a class="reference external" href="https://brew.sh/">официальный сайт Homebrew</a>.</p></li>
+<li><p>Скопируйте команду для установки — справа от неё есть символ для копирования. Нажмите на него, чтобы команда попала в буфер обмена.</p></li>
+<li><p>Найдите программу Terminal в поиске Spotlight или в списке программ. Вставьте скопированный текст в окно терминала и нажмите <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Установите Git с помощью Homebrew. Скопируйте и введите в терминал следующую команду:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">git</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Проверьте установку. Для этого откройте терминал и введите эту команду:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span>
+</pre></div>
+</div>
+<p>Если на экран выводится текущая версия Git, значит, установка прошла
+успешно.</p>
+</section>
+<section id="git-windows">
+<h2>Установка Git на Windows<a class="headerlink" href="#git-windows" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для того чтобы работать в Git с помощью консоли, необходимо установить
+специальный консольный инструмент для Windows, который называется
+<strong>Git Bash</strong>.</p>
+<p>Вот что нужно сделать:</p>
+<ol class="arabic simple">
+<li><p>Перейдите <a class="reference external" href="https://git-scm.com/download/win">на эту страницу официального сайта Git</a>.</p></li>
+<li><p>Скачайте одну из двух версий из категории <strong>Standalone Installer</strong> (англ. «автономный установщик»). Узнать тип вашей системы Windows можно в настройках.</p></li>
+<li><p>Запустите программу установки. Обратите внимание, куда будет установлен Git. Обычно это директория <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\Git</span></code>.</p></li>
+<li><p>Проверьте, что в списке устанавливаемых программ стоит галочка напротив пункта <strong>Git Bash Here</strong> — это позволит открывать консоль с Git в любой папке.</p></li>
+<li><p>Далее установщик предложит много опций. Достаточно оставить все настройки по умолчанию. Несколько раз нажмите <strong>Next</strong> (англ. «далее»), пока не начнётся процесс установки.</p></li>
+<li><p>После окончания установки нажмите <strong>Finish</strong> (англ. «завершить»).</p></li>
+</ol>
+<dl class="simple">
+<dt>Запустите программу Git Bash. Сделать это можно двумя способами:</dt><dd><ol class="arabic simple">
+<li><p>Можно ввести название программы в окно поиска на панели задач.</p></li>
+<li><p>А можно открыть директорию, в которую был установлен Git. Обычно это директория <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\Git\bin</span></code>. Перейдите в <code class="docutils literal notranslate"><span class="pre">bin</span></code> и запустите файл <code class="docutils literal notranslate"><span class="pre">bash.exe</span></code>.</p></li>
+</ol>
+</dd>
+</dl>
+<p>Теперь убедитесь в установке Git. Откройте консоль и выполните эту команду:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span>
+</pre></div>
+</div>
+<p>Если Git установлен правильно, консоль выведет его текущую версию.</p>
+</section>
+<section id="git-linux">
+<h2>Установка Git на Linux<a class="headerlink" href="#git-linux" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Для установки Git на Linux нужно использовать терминал. Найдите программу
+Terminal в поиске или в списке программ. Перейдите на <a class="reference external" href="https://git-scm.com/download/linux">официальный сайт Git</a>
+и выберите команду установки для своей версии Linux. Скопируйте её в
+программу Terminal и нажмите <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
+<p>После успешной установки введите команду для проверки.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">version</span>
+</pre></div>
+</div>
+<p>Если вы видите в консоли текущую версию Git, всё прошло успешно.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">kardapoltsev</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ReST.html">Синтаксис разметки reStructuredText</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Установка Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#git-macos">Установка Git на macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-windows">Установка Git на Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-linux">Установка Git на Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="InstallSphinx.html">Установка Sphinx</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="ReST.html" title="предыдущая глава">Синтаксис разметки reStructuredText</a></li>
+      <li>Next: <a href="InstallSphinx.html" title="следующая глава">Установка Sphinx</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, SergeyKardapoltsev.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/InstallGit.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
