@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Синтаксис разметки reStructuredText &#8212; документация kardapoltsev </title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=41b4f12d" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="_static/pygments_dark.css?v=b20cc3f5" />
+    
+    <script src="_static/documentation_options.js?v=372fde1a"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=9bfe3ffa"></script>
+    
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Установка Git" href="InstallGit.html" />
+    <link rel="prev" title="Документация как код (docs as code). Как разработать и опубликовать документацию на сайте" href="index.html" /><link rel="stylesheet" href="_static/pydoctheme_dark.css" media="(prefers-color-scheme: dark)" id="pydoctheme_dark_css">
+    <link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script>
+            <script type="text/javascript" src="_static/search-focus.js"></script>
+            <script type="text/javascript" src="_static/themetoggle.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <nav class="nav-content" role="navigation">
+        <label for="menuToggler" class="toggler__label">
+            <span></span>
+        </label>
+        <span class="nav-items-wrapper">
+            <a href="https://www.python.org/" class="nav-logo">
+                <img src="_static/py.svg" alt="Python logo"/>
+            </a>
+            <span class="version_switcher_placeholder"></span>
+            <form role="search" class="search" action="search.html" method="get">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                    <path fill-rule="nonzero" fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" />
+                <input type="submit" value="Искать"/>
+            </form>
+        </span>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+            
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label>
+  <div>
+    <h3><a href="index.html">Оглавление</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Синтаксис разметки reStructuredText</a><ul>
+<li><a class="reference internal" href="#id1">Заголовки</a></li>
+<li><a class="reference internal" href="#id2">Абзацы</a></li>
+<li><a class="reference internal" href="#id3">Начертание текста</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Предыдущий раздел</h4>
+    <p class="topless"><a href="index.html"
+                          title="предыдущая глава">Документация как код (docs as code). Как разработать и опубликовать документацию на сайте</a></p>
+  </div>
+  <div>
+    <h4>Следующий раздел</h4>
+    <p class="topless"><a href="InstallGit.html"
+                          title="следующая глава">Установка Git</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ReST.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="InstallGit.html" title="Установка Git"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Документация как код (docs as code). Как разработать и опубликовать документацию на сайте"
+             accesskey="P">назад</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">документация kardapoltsev </a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Синтаксис разметки reStructuredText</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" id="search-box" />
+          <input type="submit" value="Искать" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="restructuredtext">
+<h1>Синтаксис разметки reStructuredText<a class="headerlink" href="#restructuredtext" title="Ссылка на этот заголовок">¶</a></h1>
+<hr class="docutils" />
+<p>Исходные документы для этого сайта я написал с помощью облегчённого языка
+разметки ReST. Напомню, что документы с разметкой ReST – обычные текстовые
+файлы. Все вносимые изменения в такие файлы легко отслеживать с помощью Git.</p>
+<p>В этом разделе указаны те элементы синтаксиса ReST, которые я применил
+при создании проекта. Ознакомиться с другими его возможностями можно,
+например, на <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html">этом сайте</a> и <a class="reference external" href="https://helpbook.readthedocs.io/ru/latest/cat/syntax.html">здесь</a>.</p>
+<p>В ReST отступы и пробелы имеют важное значение для команд разметки,
+но не имеют значения внутри текста (несколько пробелов будут отображаться
+как один). В командах ReST используется символ обратной кавычки «`».
+Использование обычных одинарных кавычек в командах не привёдет к желаемым
+результатам.</p>
+<section id="id1">
+<h2>Заголовки<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<p>ReST поддерживает несколько уровней заголовков. Заголовки первого уровня
+подчёркиваются символом равно <code class="docutils literal notranslate"><span class="pre">=</span></code>. Заголовки второго уровня подчёркиваются
+символом короткого тире или минуса <code class="docutils literal notranslate"><span class="pre">-</span></code>. Заголовки третьего уровня
+подчёркиваются символом тильды <code class="docutils literal notranslate"><span class="pre">~</span></code>. Для параграфов можно
+использовать подчёркивание символами двойных кавычек <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>.</p>
+<p>Заголовки можно отбить строкой с помощью символов:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>= ` : &#39; &quot; ~ ^ _ * + # &lt; &gt;
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Заголовок</span> <span class="mi">1</span> <span class="n">уровня</span>
+<span class="o">==================</span>
+
+<span class="n">Заголовок</span> <span class="mi">2</span> <span class="n">уровня</span>
+<span class="o">------------------</span>
+
+<span class="n">Заголовок</span> <span class="mi">3</span> <span class="n">уровня</span>
+<span class="o">~~~~~~~~~~~~~~~~~~</span>
+
+<span class="n">Заголовок</span> <span class="mi">4</span> <span class="n">уровня</span>
+<span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span><span class="s2">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>Абзацы<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Абзацы в ReST отделяются друг от друга пустой строкой:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Это</span> <span class="n">первый</span> <span class="n">абзац</span><span class="o">.</span>
+
+<span class="n">А</span> <span class="n">это</span> <span class="n">второй</span> <span class="n">абзац</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>Начертание текста<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Чтобы сделать текст <strong>жирным</strong>, нужно обособить его двумя символами
+звёздочек с каждой стороны:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">жирный</span> <span class="n">текст</span><span class="o">**</span>
+</pre></div>
+</div>
+<p>Чтобы сделать текст <em>курсивным</em>, нужно обособить его символами
+звёздочек – по одному символу с каждой стороны:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">курсивный</span> <span class="n">текст</span><span class="o">*</span>
+</pre></div>
+</div>
+<p>Пробелы между выделяемым словом и звёздочкой ставить нельзя:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>«** так **», «** так**» или «*так *» не даст нужного результата
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Раздел не завершён и находится в процессе доработки.</p>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Оглавление</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Синтаксис разметки reStructuredText</a><ul>
+<li><a class="reference internal" href="#id1">Заголовки</a></li>
+<li><a class="reference internal" href="#id2">Абзацы</a></li>
+<li><a class="reference internal" href="#id3">Начертание текста</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Предыдущий раздел</h4>
+    <p class="topless"><a href="index.html"
+                          title="предыдущая глава">Документация как код (docs as code). Как разработать и опубликовать документацию на сайте</a></p>
+  </div>
+  <div>
+    <h4>Следующий раздел</h4>
+    <p class="topless"><a href="InstallGit.html"
+                          title="следующая глава">Установка Git</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ReST.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
+        <li class="right" >
+          <a href="InstallGit.html" title="Установка Git"
+             >вперёд</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Документация как код (docs as code). Как разработать и опубликовать документацию на сайте"
+             >назад</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="index.html">документация kardapoltsev </a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Синтаксис разметки reStructuredText</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" id="search-box" />
+          <input type="submit" value="Искать" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; 
+    Авторские права
+     2024, SergeyKardapoltsev.
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    
+    
+    <br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    </div>
+
+  </body>
+</html>

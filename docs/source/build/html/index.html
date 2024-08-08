@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Документация как код (docs as code). Как разработать и опубликовать документацию на сайте &#8212; документация kardapoltsev </title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=41b4f12d" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="_static/pygments_dark.css?v=b20cc3f5" />
+    
+    <script src="_static/documentation_options.js?v=372fde1a"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=9bfe3ffa"></script>
+    
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Синтаксис разметки reStructuredText" href="ReST.html" /><link rel="stylesheet" href="_static/pydoctheme_dark.css" media="(prefers-color-scheme: dark)" id="pydoctheme_dark_css">
+    <link rel="shortcut icon" type="image/png" href="_static/py.svg" />
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script>
+            <script type="text/javascript" src="_static/search-focus.js"></script>
+            <script type="text/javascript" src="_static/themetoggle.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <nav class="nav-content" role="navigation">
+        <label for="menuToggler" class="toggler__label">
+            <span></span>
+        </label>
+        <span class="nav-items-wrapper">
+            <a href="https://www.python.org/" class="nav-logo">
+                <img src="_static/py.svg" alt="Python logo"/>
+            </a>
+            <span class="version_switcher_placeholder"></span>
+            <form role="search" class="search" action="search.html" method="get">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                    <path fill-rule="nonzero" fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+                <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" />
+                <input type="submit" value="Искать"/>
+            </form>
+        </span>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <div class="language_switcher_placeholder"></div>
+            
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label>
+  <div>
+    <h4>Следующий раздел</h4>
+    <p class="topless"><a href="ReST.html"
+                          title="следующая глава">Синтаксис разметки reStructuredText</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="ReST.html" title="Синтаксис разметки reStructuredText"
+             accesskey="N">вперёд</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="#">документация kardapoltsev </a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Документация как код (docs as code). Как разработать и опубликовать документацию на сайте</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" id="search-box" />
+          <input type="submit" value="Искать" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="docs-as-code">
+<h1>Документация как код (docs as code). Как разработать и опубликовать документацию на сайте<a class="headerlink" href="#docs-as-code" title="Ссылка на этот заголовок">¶</a></h1>
+<hr class="docutils" />
+<p>Приветствую.</p>
+<p>Этот сайт создан в качестве личного проекта. В нём я описал мой опыт
+применения docs as code для создания документации и её публикации на сайте.
+Docs as code (документация как код) — это подход, при котором
+документация создаётся, управляется и хранится так же,
+как и программный код. Данный сайт по сути является пошаговой инструкцией
+моих действий с некоторой дополнительной информацией.</p>
+<p>В этом проекте я использовал:</p>
+<ul class="simple">
+<li><p>язык разметки ReStructuredText;</p></li>
+<li><p>систему контроля версий Git;</p></li>
+<li><p>генератор документации Sphinx;</p></li>
+<li><p>сервис GitHub;</p></li>
+<li><p>сервис Read the Docs.</p></li>
+</ul>
+<p>ReStructuredText (сокращение: <strong>ReST</strong>) – облегчённый язык разметки.
+Документы с разметкой ReST – это обычные текстовые файлы с расширением
+<strong>.rst</strong>. Их можно открывать и редактировать в любом текстовом редакторе
+(например, в Блокноте). ReST предоставляет много возможностей для
+структурирования и форматирования документации.</p>
+<p>Git – одна из самых популярных систем контроля версий документов. Это
+программное обеспечение, которое позволяет отслеживать изменения в
+программах, текстовых файлах, веб-сайтах. С помощью Git можно параллельно
+работать нескольким пользователям над одним проектом, даже над
+одним файлом. Git хранит историю изменений и сведения о том, кто и когда
+вносил эти изменения в файл. С Git можно работать через командную строку
+или другие программы, в которые он интегрирован. В данном проекте описана
+работа через командную строку.</p>
+<p>Sphinx – программа, которая преобразовывает текстовые документы в разные
+форматы. Изначально её разработали для документирования языка
+программирования Python. Затем стали применять и в других проектах. Sphinx
+использует язык разметки ReST. Работают с Sphinx через командную строку.</p>
+<p>GitHub — сервис для хранения IT-проектов и совместной работы над ними
+с использованием Git. Это сайт, куда можно загрузить файлы своего проекта
+для обмена с другими людьми.</p>
+<p>Read the Docs – сервис для бесплатного хостинга документации (хостинг –
+услуга по хранению сайта). Этот сервис позволяет автоматически собирать
+и публиковать документацию из репозиториев на GitHub и других аналогичных
+сервисах. Документация может автоматически обновляться на сайте сразу
+после добавления в репозиторий нового текста (кода).</p>
+<p>Работа с каждым из перечисленных инструментов описана в отдельных
+разделах моего проекта.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Работа над проектом пока не завершена. Сайт будет пополняться новыми разделами.</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ReST.html">Синтаксис разметки reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ReST.html#id1">Заголовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ReST.html#id2">Абзацы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ReST.html#id3">Начертание текста</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="InstallGit.html">Установка Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="InstallGit.html#git-macos">Установка Git на macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InstallGit.html#git-windows">Установка Git на Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InstallGit.html#git-linux">Установка Git на Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="InstallSphinx.html">Установка Sphinx</a></li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Следующий раздел</h4>
+    <p class="topless"><a href="ReST.html"
+                          title="следующая глава">Синтаксис разметки reStructuredText</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
+        <li class="right" >
+          <a href="ReST.html" title="Синтаксис разметки reStructuredText"
+             >вперёд</a> |</li>
+          <li><img src="_static/py.svg" alt="Python logo" style="vertical-align: middle; margin-top: -1px"/></li>
+          <li><a href="https://www.python.org/">Python</a> &#187;</li>
+          <li class="switchers">
+            <div class="language_switcher_placeholder"></div>
+            <div class="version_switcher_placeholder"></div>
+          </li>
+          <li>
+              
+              <a href="#">документация kardapoltsev </a> &#187;
+              
+          </li>
+        <li class="nav-item nav-item-this"><a href="">Документация как код (docs as code). Как разработать и опубликовать документацию на сайте</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Быстрый поиск" aria-label="Быстрый поиск" type="search" name="q" id="search-box" />
+          <input type="submit" value="Искать" />
+        </form>
+    </div>
+                     |
+                </li>
+            <li class="right">
+<label class="theme-selector-label">
+    Theme
+    <select class="theme-selector" oninput="activateTheme(this.value)">
+        <option value="auto" selected>Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+</label> |</li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    &copy; 
+    Авторские права
+     2024, SergeyKardapoltsev.
+    <br />
+    This page is licensed under the Python Software Foundation License Version 2.
+    <br />
+    Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
+    <br />
+    
+    
+    <br />
+
+    The Python Software Foundation is a non-profit corporation.
+<a href="https://www.python.org/psf/donations/">Please donate.</a>
+<br />
+    <br />
+    
+    <br />
+
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    </div>
+
+  </body>
+</html>
