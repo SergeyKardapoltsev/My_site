@@ -1,10 +1,10 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+import os
+import sys
+from typing import Any, Dict
 
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+# add the demo python code to the path, so that it can be used to demonstrate
+# source links
+sys.path.append(os.path.abspath("./kitchen-sink/demo_py"))
 
 project = 'kardapoltsev'
 copyright = '2024, SergeyKardapoltsev'
@@ -13,9 +13,7 @@ author = 'SergeyKardapoltsev'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    'python_docs_theme',
-]
+extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -25,5 +23,5 @@ language = 'ru'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'python_docs_theme'
-# html_static_path = ['_static']
+html_theme = 'scrolls'
+html_static_path = ['_static']
