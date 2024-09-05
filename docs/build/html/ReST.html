@@ -1,59 +1,94 @@
 <!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html lang="ru" data-content_root="./">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Синтаксис разметки reStructuredText &mdash; документация kardapoltsev </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
-    <title>Синтаксис разметки reStructuredText &#8212; документация kardapoltsev </title>
-    
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="_static/scrolls.css?v=966ca10f" />
-    <link rel="stylesheet" href="_static/print.css" type="text/css" />
-    
-    <script src="_static/documentation_options.js?v=372fde1a"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="_static/translations.js?v=9bfe3ffa"></script>
-    <script src="_static/theme_extras.js"></script>
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=372fde1a"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=9bfe3ffa"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Алфавитный указатель" href="genindex.html" />
     <link rel="search" title="Поиск" href="search.html" />
     <link rel="next" title="Установка Git" href="InstallGit.html" />
     <link rel="prev" title="Документация как код (docs as code). Как разработать и опубликовать документацию на сайте" href="index.html" /> 
-  </head><body>
-    <div id="content">
-      <div class="header">
-        <h1 class="heading"><a href="index.html"
-          title="back to the documentation overview"><span>Синтаксис разметки reStructuredText</span></a></h1>
-      </div>
-      <div class="relnav" role="navigation" aria-label="Related">
-        <a href="index.html">&laquo; Документация как код (docs as code). Как разработать и опубликовать документацию на сайте</a> |
-        <a href="#">Синтаксис разметки reStructuredText</a>
-        | <a href="InstallGit.html">Установка Git &raquo;</a>
-      </div>
-      <div id="contentwrapper">
-        <div id="toc" role="navigation" aria-label="Table of contents">
-          <h3>Оглавление</h3>
-          <ul>
-<li><a class="reference internal" href="#">Синтаксис разметки reStructuredText</a><ul>
-<li><a class="reference internal" href="#id3">Заголовки</a></li>
-<li><a class="reference internal" href="#id4">Абзацы</a></li>
-<li><a class="reference internal" href="#id5">Начертание текста</a></li>
-<li><a class="reference internal" href="#id6">Списки</a></li>
-<li><a class="reference internal" href="#id7">Программный код</a></li>
-<li><a class="reference internal" href="#id8">Комментарии</a></li>
-<li><a class="reference internal" href="#id9">Ссылки</a></li>
-<li><a class="reference internal" href="#id13">Блоки примечаний и предупреждений</a></li>
-<li><a class="reference internal" href="#id14">Содержание</a></li>
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            kardapoltsev
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Синтаксис разметки reStructuredText</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Заголовки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Абзацы</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">Начертание текста</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">Списки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">Программный код</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">Комментарии</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">Ссылки</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">Блоки примечаний и предупреждений</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">Содержание</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="InstallGit.html">Установка Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="InstallSphinx.html">Установка Sphinx</a></li>
 </ul>
 
         </div>
-        <div role="main">
-        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">kardapoltsev</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Синтаксис разметки reStructuredText</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ReST.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="restructuredtext">
-<h1>Синтаксис разметки reStructuredText<a class="headerlink" href="#restructuredtext" title="Ссылка на этот заголовок">¶</a></h1>
+<h1>Синтаксис разметки reStructuredText<a class="headerlink" href="#restructuredtext" title="Ссылка на этот заголовок"></a></h1>
 <hr class="docutils" />
 <p>Структуру и оформление текстов для этого сайта я создавал с помощью
 облегчённого языка разметки ReST. Напомню, что документы с разметкой ReST
@@ -69,7 +104,7 @@
 Использование обычных одинарных кавычек в командах не привёдет к желаемым
 результатам.</p>
 <section id="id3">
-<h2>Заголовки<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Заголовки<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h2>
 <p>ReST поддерживает несколько уровней заголовков. Заголовки первого уровня
 подчёркиваются символом равно <code class="docutils literal notranslate"><span class="pre">=</span></code>. Заголовки второго уровня подчёркиваются
 символом короткого тире или минуса <code class="docutils literal notranslate"><span class="pre">-</span></code>. Заголовки третьего уровня
@@ -94,7 +129,7 @@
 </div>
 </section>
 <section id="id4">
-<h2>Абзацы<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Абзацы<a class="headerlink" href="#id4" title="Ссылка на этот заголовок"></a></h2>
 <p>Абзацы в ReST отделяются друг от друга пустой строкой:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Это</span> <span class="n">первый</span> <span class="n">абзац</span><span class="o">.</span>
 
@@ -114,7 +149,7 @@
 <p>Второй абзац</p>
 </section>
 <section id="id5">
-<h2>Начертание текста<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Начертание текста<a class="headerlink" href="#id5" title="Ссылка на этот заголовок"></a></h2>
 <p>Чтобы сделать текст <strong>жирным</strong>, нужно обособить его двумя символами
 звёздочек с каждой стороны:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">жирный</span> <span class="n">текст</span><span class="o">**</span>
@@ -133,7 +168,7 @@
 </div>
 </section>
 <section id="id6">
-<h2>Списки<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Списки<a class="headerlink" href="#id6" title="Ссылка на этот заголовок"></a></h2>
 <p>Списки могут быть нумерованными, автонумерованными, маркированными и
 вложенными.</p>
 <p>Нумерованные списки создаются с помощью символа числа с точкой:</p>
@@ -233,7 +268,7 @@
 </ol>
 </section>
 <section id="id7">
-<h2>Программный код<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Программный код<a class="headerlink" href="#id7" title="Ссылка на этот заголовок"></a></h2>
 <p>Чтобы вставит часть кода в предложение, нужно выделить текст двойными
 обратными кавычками:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Начало предложения, ``текст в виде програмного кода``, конец предложения.
@@ -263,7 +298,7 @@
 </div>
 </section>
 <section id="id8">
-<h2>Комментарии<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Комментарии<a class="headerlink" href="#id8" title="Ссылка на этот заголовок"></a></h2>
 <p>В ReST можно оставлять комментарии. Они будут видны только в исходном
 файле ReST. Комментарии создаются с помощью двух точек в начале предложения
 <code class="docutils literal notranslate"><span class="pre">..</span></code>. Для создания многострочных комментариев необходимо соблюдать
@@ -274,7 +309,7 @@
 </div>
 </section>
 <section id="id9">
-<h2>Ссылки<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Ссылки<a class="headerlink" href="#id9" title="Ссылка на этот заголовок"></a></h2>
 <p>Внешние ссылки создаются так:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>1. Внешние ссылки выглядят так: ссылка_.
 
@@ -312,7 +347,7 @@
 </div>
 </section>
 <section id="id13">
-<h2>Блоки примечаний и предупреждений<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Блоки примечаний и предупреждений<a class="headerlink" href="#id13" title="Ссылка на этот заголовок"></a></h2>
 <p>Блоки примечаний и предупреждений используются, чтобы обратить внимание
 на важную или дополнительную информацию. Язык заголовков и оформление
 блоков зависит от выбранного шаблона. В стандартном шаблоне, используемом
@@ -362,7 +397,7 @@
 </div>
 </section>
 <section id="id14">
-<h2>Содержание<a class="headerlink" href="#id14" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Содержание<a class="headerlink" href="#id14" title="Ссылка на этот заголовок"></a></h2>
 <p>Из заголовков ReST может автоматически создать оглавление, которое
 вставляется командой <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">contents::</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">contents</span><span class="p">::</span> <span class="n">Оглавление</span>
@@ -380,13 +415,34 @@
 </section>
 
 
-        </div>
-      </div>
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="index.html" class="btn btn-neutral float-left" title="Документация как код (docs as code). Как разработать и опубликовать документацию на сайте" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="InstallGit.html" class="btn btn-neutral float-right" title="Установка Git" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
-    <div class="footer" role="contentinfo">
-    &#169; Авторские права 2024, SergeyKardapoltsev.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
-    </div>
-  </body>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2024, SergeyKardapoltsev. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>
