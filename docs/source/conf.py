@@ -13,7 +13,7 @@ author = 'SergeyKardapoltsev'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_rtd_theme']
+extensions = ['sphinx_material']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -23,5 +23,5 @@ language = 'ru'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = "sphinx_rtd_theme" #'scrolls'
+html_theme = "sphinx_material" #"sphinx_rtd_theme"
 html_static_path = ['_static']
