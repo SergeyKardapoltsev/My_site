@@ -67,5 +67,6 @@ Read the Docs – сервис для бесплатного хостинга д
    ReST
    InstallGit
    InstallSphinx
+   SettingUpGit
    CreateProjectSphinx
 
