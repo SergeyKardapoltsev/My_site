@@ -1,2 +1,2 @@
 sphinx
-sphinx_material
+sphinx_rtd_theme

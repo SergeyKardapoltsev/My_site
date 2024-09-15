@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ed877c8-52ed-4091-9e33-960c475e623a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/CreateProjectSphinx.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/CreateProjectSphinx.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <workItem from="1724313331817" duration="9000" />
       <workItem from="1724762411149" duration="5158000" />
       <workItem from="1725204097865" duration="41000" />
-      <workItem from="1725532789738" duration="10930000" />
+      <workItem from="1725532789738" duration="14693000" />
     </task>
     <servers />
   </component>
